@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+  <meta charset="UTF-8">
+  <title>Registro</title>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+  <link rel="shortcut icon" type="image/png" media='screen' href="img/logo.png">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css'><link rel="stylesheet" href="css/styleregis.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+
+			<h1 class="tttt" style="color:#00ca11;">REGISTRO</h1>
+
+			<div class="imagee">
+				<img src="img/logo.png" height="140px" width="167px">
+			</div>
+
+			<form class="login" method="post" action="validaregis.php">
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" class="login__input" name="documento" placeholder="Documento" required  pattern="[0-9]+" minlength="4" maxlength="35">
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" class="login__input" name="nombre" placeholder="Nombre" required  pattern="[a-zA-Z]+" minlength="4" maxlength="35">
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" class="login__input" name="apellido" placeholder="Apellido" required pattern="[a-zA-Z]+" minlength="4" maxlength="35">
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-solid fa-mobile"></i>
+					<input type="text" class="login__input" name="cell" placeholder="Telefono" required pattern="[0-9]+" minlength="4" maxlength="35">
+				</div>
+				
+				<div class="login__field">
+					<i class="login__icon fas fa-light fa-envelope"></i>
+					<input type="email" class="login__input" name="mail" placeholder="Correo" required>
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+					<input type="password" class="login__input" name="pass" placeholder="Contraseña" required minlength="8" maxlength="35">
+				</div>
+				<button type="submit" class="button login__submit">
+					<span class="button__text">Registrar</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>	
+				
+			<select  name="rol[]" style="display:none;">
+				<option value="2">cliente</option>
+			</select>
+			<br>
+
+			</form>
+
+			<div>
+				<p class="inperbi">¿Ya tienes cuenta?<a class="inper" href="indexinicio.html"> Inicia Sesión Aqui</a></p>
+			</div>
+
+
+			<form action="principal.html">
+				<button class="boton_volver">
+					<span class="button__text">Volver</span>
+					<i class=" button__volver  fas fa-sign-out-alt"></i>
+				</button>
+			</form>
+
+			
+
+			<div class="social-login">
+				<h3>Redes Sociales</h3>
+				<div class="social-icons">
+					<a href="https://www.instagram.com/gorras._.urbanas/" class="social-login__icon fab fa-instagram"></a>
+					<a href="https://www.facebook.com/profile.php?id=100090325676236" class="social-login__icon fab fa-facebook"></a>
+				</div>
+			</div>
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
